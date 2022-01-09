@@ -28,7 +28,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void populate(Tweet tweet) {
         if(tweet.getSender() != null && tweet.getSender().getAvatar() != null){
             binding.senderNick.setText(tweet.getSender().getNick());
-            glideImageLoader.onDisplayImage(binding.getRoot().getContext(), binding.senderAvatar, tweet.getSender().getAvatar());
+            glideImageLoader.onDisplayImage(MainActivity.getMyContext(), binding.senderAvatar, tweet.getSender().getAvatar());
         }
         if(tweet.getImages() != null){
             Image[] images = tweet.getImages();
@@ -40,7 +40,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 array.add(imageInfo);
             }
             if(array.size() > 0) {
-                binding.nineGridView.setAdapter(new NineGridViewClickAdapter(binding.nineGridView.getContext(), array));
+                try{
+                    NineGridViewClickAdapter nineGridViewClickAdapter = new NineGridViewClickAdapter(binding.nineGridView.getContext(), array);
+                    binding.nineGridView.setAdapter(nineGridViewClickAdapter);
+                } catch (Exception ex){
+                    System.out.println(ex);
+                }
             }
         }
         binding.content.setText(tweet.getContent());

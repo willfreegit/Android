@@ -2,6 +2,7 @@ package com.example.wechatmoments.presenter;
 
 import static com.example.wechatmoments.data.Constants.LABEL;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.example.wechatmoments.data.DataModule;
