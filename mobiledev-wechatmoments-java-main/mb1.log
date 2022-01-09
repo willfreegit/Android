@@ -1,0 +1,11 @@
+{"level":"info","message":"[mb:2525] mountebank v2.5.0 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2022-01-06T02:20:00.816Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2022-01-06T02:20:00.841Z"}
+{"level":"info","message":"[http:2727 User] Open for business...","timestamp":"2022-01-06T02:20:00.855Z"}
+{"level":"info","message":"[http:2727 User] ::1:43520 => GET /","timestamp":"2022-01-06T02:21:16.193Z"}
+{"level":"info","message":"[http:2727 User] ::1:43522 => GET /favicon.ico","timestamp":"2022-01-06T02:21:16.359Z"}
+{"level":"info","message":"[http:2727 User] ::1:43554 => GET /user/jsmith","timestamp":"2022-01-06T02:21:50.506Z"}
+{"level":"info","message":"[http:2727 User] ::1:45560 => GET /user/jsmith/tweets","timestamp":"2022-01-06T03:04:53.134Z"}
+{"level":"info","message":"[http:2727 User] ::1:47748 => GET /user/jsmith/tweets","timestamp":"2022-01-06T03:48:58.434Z"}
+{"level":"info","message":"[http:2727 User] ::ffff:127.0.0.1:53222 => GET /user/jsmith/tweets","timestamp":"2022-01-06T04:18:23.033Z"}
+{"level":"info","message":"[http:2727 User] ::ffff:127.0.0.1:53224 => GET /favicon.ico","timestamp":"2022-01-06T04:18:23.213Z"}
+{"level":"info","message":"[mb:2525] Adios - see you soon?","timestamp":"2022-01-06T04:19:23.603Z"}
